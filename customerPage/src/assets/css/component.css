@@ -1,0 +1,112 @@
+.button-box {
+  width: 200px;
+  position: relative;
+  background: #fff;
+  border: 0px solid var(--third-color-green);
+  box-shadow: 0 2px 11px rgb(221, 221, 221);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: none;
+  border-spacing: 0;
+}
+
+.button-box .toggle-btn {
+  padding: 14px 20px;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  position: relative;
+  text-align: center;
+  color: #ccc;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.button-box #btn {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 90px;
+  height: 100%;
+  background: var(--third-color-green);
+  border-radius: 5px;
+  transition: 0.2s;
+  border: 3px solid var(--third-color-green);
+}
+.button-box button {
+  color: var(--white-color);
+  background-color: red;
+}
+.button-box .toggle-btn.active {
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+/* component input */
+.component-input {
+  width: fit-content;
+  overflow: hidden;
+}
+.component-input input {
+  border: var(--custom-border);
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+.component-input input:focus {
+  border-color: var(--third-color-green);
+}
+
+/* custom btn */
+.custom-btn {
+  background-color: var(--third-color-green);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* custom toggle */
+.custom-toggle {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 30px;
+  padding: 4px;
+  transition: all 0.2s ease-in-out;
+}
+.custom-toggle .inner-circle {
+  width: 17px;
+  height: 17px;
+  background-color: #fff;
+  transition: all 0.1s ease-in-out;
+  border-radius: 50%;
+}
+.custom-toggle.active {
+  background-color: var(--third-color-green);
+}
+.custom-toggle.active > .inner-circle {
+  margin-left: 25px;
+}
+
+/* modal */
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.151);
+  z-index: 1;
+  display: grid;
+  place-content: center;
+  display: none;
+}
+.modal__wrapper .modal {
+  z-index: 10;
+  background-color: #fff;
+  min-width: 800px;
+  height: 500px;
+  padding: 25px;
+  border-radius: 10px;
+}

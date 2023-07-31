@@ -1,0 +1,28 @@
+.nosupport__body {
+  font-size: 1.6rem;
+  margin-top: 150px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.nosupport__img {
+  width: 300px;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.nosupport__title {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.nosupport__desc {
+  line-height: 1.5;
+}

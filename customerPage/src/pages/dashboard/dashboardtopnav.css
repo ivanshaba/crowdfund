@@ -1,0 +1,61 @@
+.header__account-login {
+}
+.header__account-login.dashboard .login {
+  background-color: #fff;
+}
+.header__account-login.dashboard .login:hover {
+  background-color: rgba(235, 235, 235, 0.705);
+}
+.header__account-login.dashboard .signup:hover {
+  opacity: 0.8;
+}
+.header__account-login.dashboard .orgnization .image {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.header__account-login.dashboard .orgnization img {
+  width: 100%;
+}
+.header__account-login.dashboard .orgnization {
+  display: flex;
+  justify-items: center;
+  margin-right: 50px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2222 !important;
+}
+.header__account-login.dashboard .orgnization::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  top: -6px;
+  left: -20px;
+  bottom: -6px;
+  right: -20px;
+  border-radius: 10px;
+  z-index: -1;
+}
+.header__account-login.dashboard .orgnization i {
+  margin-left: 15px;
+  margin-top: 3px;
+  margin-right: 2px;
+  font-size: 1.6rem;
+  padding: 10px 12px 1px 12px;
+}
+.header__account-login.dashboard .orgnization i:hover {
+  background-color: rgba(231, 231, 231, 0.473);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.header__account-login.dashboard .name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.header__account-login.dashboard .location {
+  font: 1.4rem;
+  font-weight: 600;
+  opacity: 0.76;
+  margin-top: 3px;
+}

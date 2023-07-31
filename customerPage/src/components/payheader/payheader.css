@@ -1,0 +1,73 @@
+.payheader {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  width: 1100px;
+  margin: 0 auto;
+  border-bottom: 3px solid rgba(204, 204, 204, 0.075);
+}
+.payheader__btn {
+  width: fit-content;
+  margin-right: 70px;
+}
+.payheader__btn a {
+  padding: 12px 40px;
+  text-transform: uppercase;
+  color: var(--third-color-green);
+  box-shadow: var(--box-shadow);
+  font-weight: 600;
+  font-size: 1.8rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.payheader__btn a:hover {
+  color: #fff;
+  background-color: var(--third-color-green);
+}
+.payheader__btn a:active {
+  opacity: 0.8;
+}
+
+/* status bar */
+.payheader__status-bar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.payheader__status-bar > span {
+  font-size: 1.8rem;
+  margin: 0 30px;
+  position: relative;
+}
+
+/* desc */
+.payheader__desc {
+  display: flex;
+  align-items: center;
+}
+.payheader__desc .image {
+  width: 120px;
+}
+.payheader__desc img {
+  width: 100%;
+}
+.payheader__desc span {
+  font-size: 2.2rem;
+  color: var(--third-color-green);
+  font-weight: 600;
+}
+.payheader__status-bar .txt-thongtin::after,
+.payheader__status-bar .txt-thanhtoan::after {
+  content: "\f0da";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 20px;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  position: absolute;
+}
+.payheader__status-bar .txt-thanhtoan.active,
+.payheader__status-bar .txt-xacnhan.active {
+  color: rgb(0, 175, 219);
+  font-weight: 600;
+}

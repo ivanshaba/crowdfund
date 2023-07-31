@@ -1,0 +1,127 @@
+.edit-modal__wrapper {
+  background-color: rgb(0, 0, 0, 0.55);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10330;
+  display: none;
+  place-content: center;
+}
+.edit-modal__wrapper.active {
+  display: grid;
+}
+@keyframes openmodal {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.edit-modal {
+  width: 800px;
+  background-color: #fff;
+  border-radius: 20px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  animation: openmodal 0.3s ease;
+}
+.edit-modal.big {
+  width: 1300px;
+  height: 650px;
+}
+.edit-modal .btn-exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 30px;
+  text-align: center;
+  padding-right: 40px;
+}
+.edit-modal .btn-exit:hover {
+  background-color: var(--third-color-orange);
+
+  cursor: pointer;
+  color: white;
+  padding-right: 40px;
+  padding-left: 20px;
+  border-bottom-left-radius: 10px;
+}
+.edit-modal .btn-exit i {
+  font-size: 2.2rem;
+  text-align: center;
+  position: relative;
+}
+
+/*  body */
+.edit-modal h3.title {
+  text-align: center;
+  margin-top: 40px;
+}
+.edit-modal h3.title span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--third-color-green);
+  margin-left: 5px;
+}
+.edit-modal .body {
+  display: flex;
+}
+.edit-modal .body .left img {
+  width: 400px;
+}
+.edit-modal .body .right h5.title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-right: 5px;
+  width: 100px;
+}
+.edit-modal .body .right .session {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.edit-modal .body .right .session textarea {
+  border: none;
+  outline: none;
+  border: 2px solid rgba(211, 211, 211, 0.384);
+  border-radius: 10px;
+  width: 210px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 1.6rem;
+}
+.edit-modal .body .right button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  font-size: 1.6rem;
+  width: 200px;
+  background-color: var(--third-color-green);
+  color: white;
+  font-weight: 600;
+}
+.edit-modal .create-post-page.dashboard {
+  text-align: left;
+  z-index: 100000;
+  padding-top: 0 !important;
+  overflow: scroll;
+  margin-top: 40px;
+  padding: 100px;
+}
+
+.edit-modal.big .title {
+  text-align: left;
+  margin-left: 240px;
+  margin-top: 50px;
+  border-bottom: 2px solid rgba(160, 160, 160, 0.39);
+  width: fit-content;
+  padding-bottom: 15px;
+  color: var(--third-color-green);
+}
+.edit-modal .create-post-page.dashboard .title {
+  padding: 5px;
+}

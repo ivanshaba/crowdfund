@@ -1,0 +1,142 @@
+.create-post-page {
+  margin-top: 130px;
+  font-size: 2rem;
+}
+.create-post-page .upload-form__wrapper {
+  width: 800px;
+  margin: 0 auto;
+  height: 500px;
+}
+.create-post-page .upload-form {
+  width: 100%;
+  height: 100%;
+  height: 500px;
+}
+
+.create-post-page .upload-form > button.btn-show-demo {
+  padding: 12px 26px;
+  border-radius: 5px;
+  background-color: rgba(236, 236, 236, 0.445);
+  color: rgb(255, 138, 138);
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 200px;
+  margin-top: 20px;
+  float: right;
+  clear: both;
+  text-transform: capitalize;
+}
+
+.create-post-page .upload-form .ckeditor {
+  height: 500px;
+}
+.create-post-page .ck-editor__main > .ck-blurred {
+  min-height: 300px;
+}
+.create-post-page .ck-editor__main > .ck-blurred:focus {
+  border: 1px solid red;
+}
+
+.create-post-page .ck-editor__main .ck-content {
+  min-height: 300px;
+}
+
+/* input form */
+.create-post-page .input-info .title {
+  margin-top: 1px;
+  margin-bottom: 50px;
+}
+.create-post-page .input-info .input-session {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 2px solid rgba(231, 231, 231, 0.527);
+  margin-top: 20px;
+}
+.create-post-page .input-session input {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+}
+.create-post-page .input-number {
+  display: flex;
+  align-items: center;
+}
+.create-post-page .input-number span {
+  margin-top: 18px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0.5;
+  margin-right: 30px;
+  margin-left: 10px;
+  padding: 12px 10px;
+  border-radius: 5px;
+  background-color: rgba(173, 173, 173, 0.075);
+  border: 2px solid rgba(153, 153, 153, 0.348);
+}
+.create-post-page .select-session {
+  margin-top: 20px;
+  margin-left: -14px;
+  width: 300px;
+  margin-bottom: 50px;
+  display: flex;
+  width: 100%;
+}
+.create-post-page .select-session input {
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 6px 16px;
+  border: 2px solid rgba(179, 179, 179, 0.349);
+  background-color: rgb(255, 255, 255);
+}
+.create-post-page .input-file {
+  position: relative;
+}
+.create-post-page label {
+  position: absolute;
+  left: 10px;
+  top: 1px;
+  width: 80px;
+  z-index: 13300;
+  background-color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 2px;
+  margin-left: 20px;
+  color: rgb(146, 146, 146);
+  padding: 8px 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-right: 11px;
+  border-right: 1px solid rgb(221, 221, 221);
+}
+.create-post-page .select-session .honghong {
+  width: 300px;
+  font-size: 1.6rem;
+  z-index: 10000;
+}
+.create-post-page .h3title {
+  font-size: 1.8rem;
+  margin: 10px 0 30px 0;
+
+  font-weight: 600;
+  opacity: 0.8;
+}
+.create-post-page a {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  display: block;
+}
+.create-post-page a button {
+  color: var(--white-color);
+  border-radius: 10px;
+  margin-top: 20px;
+  float: right;
+  font-size: 1.6rem;
+  font-weight: 600;
+  width: 200px;
+  padding: 16px 50px;
+  background-color: var(--third-color-green);
+}

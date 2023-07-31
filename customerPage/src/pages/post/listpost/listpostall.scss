@@ -1,0 +1,155 @@
+.listpost {
+  margin-top: 120px;
+}
+.listpost__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listpost__header .title {
+  font-size: 2.2rem;
+}
+.listpost__header .input-search {
+  display: flex;
+  padding: 12px 20px;
+  background-color: rgba(238, 238, 238, 0.37);
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 400px;
+  position: relative;
+}
+@media (max-width: 500px) {
+  .listpost__header .input-search {
+    width: 300px;
+  }
+  .listpost__header .input-search .search-btn {
+    width: 100px !important;
+  }
+}
+@media (max-width: 800px) {
+  .listpost__body {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .listpost__body .left {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+.listpost__header .input-search input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+  flex: 1;
+}
+.listpost__header .input-search .search-btn {
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 120px;
+  background-image: linear-gradient(74deg, #fec724, #fe9b3f);
+  text-align: center;
+  padding-top: 14px;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 600;
+}
+.listpost__header .input-search .search-btn:hover {
+  background-image: linear-gradient(4deg, #fec724, #fe9b3f);
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* body */
+.listpost__body {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-left: 60px;
+}
+@media (max-width: 800px) {
+  .listpost__body {
+    margin-left: 0;
+  }
+}
+/* left */
+.listpost__body .left {
+  flex: 1;
+}
+.listpost__body .left .session-title {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  opacity: 0.9;
+  width: 100%;
+  line-height: 1.75;
+  width: 240px;
+  display: flex;
+  padding: 4px 14px;
+  margin-left: -4px;
+  align-items: center;
+}
+.listpost__body .left .session-title i {
+  margin-right: 10px;
+  color: #fe9b3f;
+}
+.listpost__body .left .btn-down {
+  margin-left: auto !important;
+  transform: rotate(0);
+  padding-bottom: 1px;
+}
+
+.listpost__body .left .btn-down.active {
+  transform: rotate(180deg);
+}
+
+.listpost__body .left .session-list {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  &.active {
+    display: flex !important;
+  }
+}
+.listpost__body .session-list ~ li,
+.listpost__body .left .session-list a {
+  margin-bottom: 10px;
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+  padding: 10px;
+}
+.listpost__body .left .session-list a.active {
+  color: #fe9b3f;
+  font-weight: 600;
+}
+.listpost__body .left .session-list a:hover {
+  font-weight: 600;
+}
+
+/* RIGHT */
+.listpost__body .right {
+  flex: 5;
+  margin: 30px auto;
+  width: 100%;
+}
+.listpost__body .right .list-donate-itemss {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+.listpost__body .right .list-donate-itemss .donate-item {
+  width: 335px;
+  margin: 20px 15px;
+}
+.listpost__body .right .list-donate-itemss .btn-donate button {
+  width: 120px;
+  padding: 14px 20px;
+}
